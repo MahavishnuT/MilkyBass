@@ -9,11 +9,14 @@ function App() {
 
   return (
     <div className="app">
-      
       <header className="header">
         <div className="logo-container">
           <h1 className="dj-name">MILKY BASS</h1>
           <p className="tagline">Electronic Music Producer & DJ</p>
+        </div>
+        <div className="scroll-indicator">
+          <div className="scroll-arrow">↓</div>
+          <span className="scroll-text">Scroll</span>
         </div>
       </header>
 
