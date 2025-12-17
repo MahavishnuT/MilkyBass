@@ -1,0 +1,133 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  color: #ffffff;
+}
+
+.header {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 243, 255, 0.05) 0%,
+    transparent 100%
+  );
+}
+
+.logo-container {
+  display: inline-block;
+}
+
+.dj-name {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  background: linear-gradient(135deg, #00f3ff 0%, #a855f7 50%, #ff006e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(0, 243, 255, 0.3);
+  letter-spacing: 0.1em;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #00f3ff;
+  margin-top: 0.5rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.upcoming-shows,
+.spotify-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #00f3ff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.show-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.show-card:hover {
+  transform: translateY(-5px);
+  border-color: #00f3ff;
+  box-shadow: 0 10px 30px rgba(0, 243, 255, 0.2);
+  background: rgba(0, 243, 255, 0.08);
+}
+
+.show-date {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4d94;
+  margin-bottom: 0.8rem;
+}
+
+.show-venue {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.show-city {
+  font-size: 1rem;
+  color: #a855f7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.spotify-container {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(168, 85, 247, 0.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(0, 243, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dj-name {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .shows-grid {
+    grid-template-columns: 1fr;
+  }
+}
