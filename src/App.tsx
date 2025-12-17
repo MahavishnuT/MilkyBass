@@ -1,6 +1,7 @@
 import './App.css';
+import UpcomingShows from './components/UpcomingShows';
 
-function App() {
+const App = () => {
   const upcomingShows = [
     { date: '15 Jan 2026', venue: 'Club Oxygen', city: 'Paris' },
     { date: '28 Jan 2026', venue: 'Jungle Club', city: 'Bruxelles' },
@@ -20,18 +21,7 @@ function App() {
         </div>
       </header>
 
-      <section className="upcoming-shows">
-        <h2 className="section-title">Next Shows</h2>
-        <div className="shows-grid">
-          {upcomingShows.map((show, index) => (
-            <div key={index} className="show-card">
-              <div className="show-date">{show.date}</div>
-              <div className="show-venue">{show.venue}</div>
-              <div className="show-city">{show.city}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <UpcomingShows shows={upcomingShows} />
 
       <section className="spotify-section">
         <h2 className="section-title">My Latest Tracks</h2>
@@ -54,6 +44,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;

@@ -192,7 +192,6 @@
   }
 }
 
-.upcoming-shows,
 .spotify-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -246,91 +245,6 @@
     width: 150px;
     opacity: 1;
   }
-}
-
-.shows-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.show-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 243, 255, 0.3);
-  border-radius: 12px;
-  padding: 2rem;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  backdrop-filter: blur(10px);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.show-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(0, 243, 255, 0.1) 0%,
-    transparent 70%
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.show-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  border-color: #00f3ff;
-  box-shadow: 0 20px 40px rgba(0, 243, 255, 0.3),
-    0 0 20px rgba(0, 243, 255, 0.2), inset 0 0 20px rgba(0, 243, 255, 0.1);
-  background: rgba(0, 243, 255, 0.1);
-}
-
-.show-card:hover::before {
-  opacity: 1;
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-.show-date {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ff4d94;
-  margin-bottom: 0.8rem;
-  transition: all 0.3s ease;
-}
-
-.show-card:hover .show-date {
-  transform: scale(1.1);
-  text-shadow: 0 0 20px rgba(255, 77, 148, 0.6);
-}
-
-.show-venue {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-
-.show-city {
-  font-size: 1rem;
-  color: #a855f7;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .spotify-container {
